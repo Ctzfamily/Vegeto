@@ -36,9 +36,9 @@ import speedtest
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from pyrogram.types import Message
 
-from wbb import aiohttpsession as aiosession
-from wbb.utils.dbfunctions import start_restart_stage
-from wbb.utils.http import get, post
+from VegetaRobot import aiohttpsession as aiosession
+from VegetaRobot.utils.dbfunctions import start_restart_stage
+from VegetaRobot.utils.http import get, post
 
 
 async def restart(m: Message):
