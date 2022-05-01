@@ -25,18 +25,18 @@ import re
 
 from pyrogram import filters
 
-from wbb import app
-from wbb.core.decorators.errors import capture_err
-from wbb.core.decorators.permissions import adminsOnly
-from wbb.core.keyboard import ikb
-from wbb.utils.dbfunctions import (
+from VegetaRobot import app
+from VegetaRobot.core.decorators.errors import capture_err
+from VegetaRobot.core.decorators.permissions import adminsOnly
+from VegetaRobot.core.keyboard import ikb
+from VegetaRobot.utils.dbfunctions import (
     delete_filter,
     get_filter,
     get_filters_names,
     save_filter,
 )
-from wbb.utils.filter_groups import chat_filters_group
-from wbb.utils.functions import extract_text_and_keyb
+from VegetaRobot.utils.filter_groups import chat_filters_group
+from VegetaRobot.utils.functions import extract_text_and_keyb
 
 __MODULE__ = "Filters"
 __HELP__ = """/filters To Get All The Filters In The Chat.
