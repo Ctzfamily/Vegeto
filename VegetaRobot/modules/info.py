@@ -26,9 +26,9 @@ import os
 from pyrogram import filters
 from pyrogram.types import Message
 
-from wbb import SUDOERS, app
-from wbb.core.sections import section
-from wbb.utils.dbfunctions import is_gbanned_user, user_global_karma
+from VegetaRobot import SUDOERS, app
+from VegetaRobot.core.sections import section
+from VegetaRobot.utils.dbfunctions import is_gbanned_user, user_global_karma
 
 __MODULE__ = "Info"
 __HELP__ = """
