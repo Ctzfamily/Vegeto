@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2022 ctzfamily
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -53,7 +53,7 @@ bot_start_time = time.time()
 
 
 class Log:
-    def __init__(self, save_to_file=False, file_name="wbb.log"):
+    def __init__(self, save_to_file=False, file_name="Vegeta.log"):
         self.save_to_file = save_to_file
         self.file_name = file_name
 
@@ -115,7 +115,7 @@ aiohttpsession = ClientSession()
 
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
-app = Client("wbb", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
+app = Client("Vegeta", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
 
 log.info("Starting bot client")
 app.start()
