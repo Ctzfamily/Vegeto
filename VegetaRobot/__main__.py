@@ -32,6 +32,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from VegetaRobot import (
     BOT_NAME,
     BOT_USERNAME,
+    USERBOT_NAME,
     LOG_GROUP_ID,
     aiohttpsession,
     app,
@@ -52,7 +53,7 @@ async def start_bot():
     global HELPABLE
 
     for module in ALL_MODULES:
-        imported_module = importlib.import_module("wbb.modules." + module)
+        imported_module = importlib.import_module("VegetaRobot.modules." + module)
         if (
                 hasattr(imported_module, "__MODULE__")
                 and imported_module.__MODULE__
@@ -75,7 +76,7 @@ async def start_bot():
             bot_modules += "|{:<15}".format(i)
         j += 1
     print("+===============================================================+")
-    print("|                              WBB                              |")
+    print("|                              VEGETA                              |")
     print("+===============+===============+===============+===============+")
     print(bot_modules)
     print("+===============+===============+===============+===============+")
@@ -117,7 +118,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
             ),
             InlineKeyboardButton(
                 text="Repo 🛠",
-                url="https://github.com/thehamkercat/WilliamButcherBot",
+                url="https://github.com/ctzfamily/vegeto",
             ),
         ],
         [
@@ -126,7 +127,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
                 callback_data="stats_callback",
             ),
             InlineKeyboardButton(
-                text="Support 👨", url="http://t.me/WBBSupport"
+                text="Support 👨", url="http://t.me/VegetaSupport"
             ),
         ],
         [
@@ -153,7 +154,7 @@ keyboard = InlineKeyboardMarkup(
             ),
             InlineKeyboardButton(
                 text="Repo 🛠",
-                url="https://github.com/thehamkercat/WilliamButcherBot",
+                url="https://github.com/ctzfamily/vegeto",
             ),
         ],
         [
@@ -161,7 +162,7 @@ keyboard = InlineKeyboardMarkup(
                 text="System Stats 💻",
                 callback_data="stats_callback",
             ),
-            InlineKeyboardButton(text="Support 👨", url="t.me/WBBSupport"),
+            InlineKeyboardButton(text="Support 👨", url="t.me/VegetaSupport"),
         ],
     ]
 )
