@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2022 ctzfamily
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -24,9 +24,9 @@ SOFTWARE.
 from pyrogram import filters as filters_
 from pyrogram.types import Message
 
-from wbb import SUDOERS
-from wbb import USERBOT_ID as OWNER_ID
-from wbb.utils.functions import get_urls_from_text
+from VegetaRobot import SUDOERS
+from VegetaRobot import USERBOT_ID as OWNER_ID
+from VegetaRobot.utils.functions import get_urls_from_text
 
 
 def url(_, __, message: Message) -> bool:
