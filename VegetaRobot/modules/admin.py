@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 ctzfamily
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -32,10 +32,10 @@ from pyrogram.types import (
     Message,
 )
 
-from wbb import BOT_ID, SUDOERS, app, log
-from wbb.core.decorators.errors import capture_err
-from wbb.core.keyboard import ikb
-from wbb.utils.dbfunctions import (
+from VegetaRobot import BOT_ID, SUDOERS, app, log
+from VegetaRobot.core.decorators.errors import capture_err
+from VegetaRobot.core.keyboard import ikb
+from VegetaRobot.utils.dbfunctions import (
     add_warn,
     get_warn,
     int_to_alpha,
@@ -101,7 +101,7 @@ async def member_permissions(chat_id: int, user_id: int):
     return perms
 
 
-from wbb.core.decorators.permissions import adminsOnly
+from VegetaRobot.core.decorators.permissions import adminsOnly
 
 admins_in_chat = {}
 
