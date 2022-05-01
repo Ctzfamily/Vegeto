@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2022 Ctzfamily
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -29,20 +29,19 @@ import uvloop
 from pyrogram import filters, idle
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from wbb import (
+from VegetaRobot import (
     BOT_NAME,
     BOT_USERNAME,
     LOG_GROUP_ID,
-    USERBOT_NAME,
     aiohttpsession,
     app,
     log,
 )
-from wbb.modules import ALL_MODULES
-from wbb.modules.sudoers import bot_sys_stats
-from wbb.utils import paginate_modules
-from wbb.utils.constants import MARKDOWN
-from wbb.utils.dbfunctions import clean_restart_stage
+from VegetaRobot.modules import ALL_MODULES
+from VegetaRobot.modules.sudoers import bot_sys_stats
+from VegetaRobot.utils import paginate_modules
+from VegetaRobot.utils.constants import MARKDOWN
+from VegetaRobot.utils.dbfunctions import clean_restart_stage
 
 loop = asyncio.get_event_loop()
 
