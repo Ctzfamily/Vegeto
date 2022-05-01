@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2022 ctzfamily
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -24,7 +24,7 @@ SOFTWARE.
 from pykeyboard import InlineKeyboard
 from pyrogram.types import InlineKeyboardButton as Ikb
 
-from wbb.utils.functions import get_urls_from_text as is_url
+from VegetaRobot.utils.functions import get_urls_from_text as is_url
 
 
 def keyboard(buttons_list, row_width: int = 2):
