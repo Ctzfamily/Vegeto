@@ -30,7 +30,7 @@ import psutil
 from pyrogram import filters
 from pyrogram.errors import FloodWait
 
-from wbb import (
+from VegetaRobot import (
     BOT_ID,
     GBAN_LOG_GROUP_ID,
     SUDOERS,
@@ -38,15 +38,15 @@ from wbb import (
     app,
     bot_start_time,
 )
-from wbb.core.decorators.errors import capture_err
-from wbb.utils import formatter
-from wbb.utils.dbfunctions import (
+from VegetaRobot.core.decorators.errors import capture_err
+from VegetaRobot.utils import formatter
+from VegetaRobot.utils.dbfunctions import (
     add_gban_user,
     get_served_chats,
     is_gbanned_user,
     remove_gban_user,
 )
-from wbb.utils.functions import extract_user, extract_user_and_reason, restart
+from VegetaRobot.utils.functions import extract_user, extract_user_and_reason, restart
 
 __MODULE__ = "Sudoers"
 __HELP__ = """
