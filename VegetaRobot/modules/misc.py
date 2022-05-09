@@ -30,12 +30,12 @@ from re import findall
 
 from pyrogram import filters
 
-from wbb import SUDOERS, USERBOT_PREFIX, app, app2, arq, eor
-from wbb.core.decorators.errors import capture_err
-from wbb.utils import random_line
-from wbb.utils.http import get
-from wbb.utils.json_prettify import json_prettify
-from wbb.utils.pastebin import paste
+from VegetaRobot import SUDOERS, USERBOT_PREFIX, app, app2, arq, eor
+from VegetaRobot.core.decorators.errors import capture_err
+from VegetaRobot.utils import random_line
+from VegetaRobot.utils.http import get
+from VegetaRobot.utils.json_prettify import json_prettify
+from VegetaRobot.utils.pastebin import paste
 
 __MODULE__ = "Misc"
 __HELP__ = """
