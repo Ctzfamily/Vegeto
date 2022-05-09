@@ -4,8 +4,8 @@ import sre_constants
 
 from pyrogram import filters
 
-from wbb import app
-from wbb.utils.filter_groups import regex_group
+from VegetaRobot import app
+from VegetaRobot.utils.filter_groups import regex_group
 
 __MODULE__ = "Sed"
 __HELP__ = "**Usage:**\ns/foo/bar"
