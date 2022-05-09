@@ -26,10 +26,10 @@ import asyncio
 from pyrogram import filters
 from pyrogram.errors import FloodWait
 
-from wbb import BOT_ID, BOT_NAME, SUDOERS, USERBOT_NAME, app, app2
-from wbb.core.decorators.errors import capture_err
-from wbb.modules import ALL_MODULES
-from wbb.utils.dbfunctions import (
+from VegetaRobot import BOT_ID, BOT_NAME, SUDOERS, USERBOT_NAME, app, app2
+from VegetaRobot.core.decorators.errors import capture_err
+from VegetaRobot.modules import ALL_MODULES
+from VegetaRobot.utils.dbfunctions import (
     get_blacklist_filters_count,
     get_filters_count,
     get_gbans_count,
@@ -41,8 +41,8 @@ from wbb.utils.dbfunctions import (
     get_warns_count,
     remove_served_chat,
 )
-from wbb.utils.http import get
-from wbb.utils.inlinefuncs import keywords_list
+from VegetaRobot.utils.http import get
+from VegetaRobot.utils.inlinefuncs import keywords_list
 
 
 @app.on_message(filters.command("clean_db") & ~filters.edited & SUDOERS)
