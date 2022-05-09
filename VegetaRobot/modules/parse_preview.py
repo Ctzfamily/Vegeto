@@ -3,8 +3,8 @@ from asyncio import sleep
 from pyrogram import filters
 from pyrogram.types import Message
 
-from wbb import SUDOERS, USERBOT_PREFIX, app2, eor
-from wbb.core.sections import section
+from VegetaRobot import SUDOERS, USERBOT_PREFIX, app2, eor
+from VegetaRobot.core.sections import section
 
 
 @app2.on_message(
