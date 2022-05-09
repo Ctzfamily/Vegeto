@@ -25,17 +25,17 @@ from re import findall
 
 from pyrogram import filters
 
-from wbb import SUDOERS, USERBOT_ID, USERBOT_PREFIX, app, app2, eor
-from wbb.core.decorators.errors import capture_err
-from wbb.core.decorators.permissions import adminsOnly
-from wbb.core.keyboard import ikb
-from wbb.utils.dbfunctions import (
+from VegetaRobot import SUDOERS, USERBOT_ID, USERBOT_PREFIX, app, app2, eor
+from VegetaRobot.core.decorators.errors import capture_err
+from VegetaRobot.core.decorators.permissions import adminsOnly
+from VegetaRobot.core.keyboard import ikb
+from VegetaRobot.utils.dbfunctions import (
     delete_note,
     get_note,
     get_note_names,
     save_note,
 )
-from wbb.utils.functions import extract_text_and_keyb
+from VegetaRobot.utils.functions import extract_text_and_keyb
 
 __MODULE__ = "Notes"
 __HELP__ = """/notes To Get All The Notes In The Chat.
